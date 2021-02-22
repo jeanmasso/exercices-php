@@ -7,8 +7,7 @@
   - Afficher son contenu
 */
 $name = "Hello";
-echo $name;
-
+echo $name."</br>";
 
 /* Exercice 2
  - Créer trois variables lastname , firstname et age et les initialiser avec les valeurs de votre choix. Attention age est de type entier.
@@ -17,7 +16,7 @@ echo $name;
 $lastname = "Doe";
 $firstname = "John";
 $age = 25;
-echo $lastname."\r\n", $firstname."\r\n", $age."\r\n";
+echo $lastname."</br>", $firstname."</br>", $age."</br>";
 
 
 /* Exercice 3
@@ -25,9 +24,9 @@ echo $lastname."\r\n", $firstname."\r\n", $age."\r\n";
  - Changer sa valeur par 3. Afficher son contenu.
  - Changer sa valeur par 125. Afficher son contenu.
 */
-$km = 1; echo $km."\r\n";
-$km = 3; echo $km."\r\n";
-$km = 125; echo $km."\r\n";
+$km = 1; echo $km."</br>";
+$km = 3; echo $km."</br>";
+$km = 125; echo $km."</br>";
 
 
 /* Exercice 4
@@ -40,15 +39,15 @@ $int = 3144568;
 $float = 3E-70;
 $boolean = true;
 var_dump($str, $int, $float, $boolean);
-echo $str."\r\n", $int."\r\n", $float."\r\n", $boolean."\r\n";
+echo $str."</br>", $int."</br>", $float."</br>", $boolean."</br>";
 
 
 /* Exercice 5
  - Créer une variable de type int. L'initialiser avec rien. Afficher sa valeur.
  - Donner une valeur à cette variable et l'afficher.
 */
-$null = null; echo "la valeur est dans ces guillemets '".$null."'.\r\n";
-$null = 456; echo "la valeur est dans ces guillemets '".$null."'.\r\n";
+$null = null; echo "la valeur est dans ces guillemets '".$null."'.</br>";
+$null = 456; echo "la valeur est dans ces guillemets '".$null."'.</br>";
 
 
 /* Exercice 6
@@ -56,7 +55,7 @@ $null = 456; echo "la valeur est dans ces guillemets '".$null."'.\r\n";
  - Afficher : "Bonjour" + name + ", comment vas tu ?".
 */
 $name = "Joe";
-echo "Bonjour ".$name.", comment vas tu ?\r\n";
+echo "Bonjour ".$name.", comment vas tu ?</br>";
 
 
 /* Exercice 7
@@ -67,7 +66,7 @@ echo "Bonjour ".$name.", comment vas tu ?\r\n";
 $lastname = "Doe";
 $firstname = "Joe";
 $age = 35;
-echo "Bonjour ".$lastname." ".$firstname.",tu as ".$age." ans\r\n";
+echo "Bonjour ".$lastname." ".$firstname.",tu as ".$age." ans</br>";
 
 
 /* Exercice 8
@@ -80,10 +79,11 @@ echo "Bonjour ".$lastname." ".$firstname.",tu as ".$age." ans\r\n";
 $first = 3 + 4;
 $second = 5 * 20;
 $third = 45 / 5;
-echo $first."\r\n", $second."\r\n", $third."\r\n";
+echo $first."</br>", $second."</br>", $third."</br>";
 
+?>
 
-
+<?php
 /* =========================== Exercices - PHP - Les conditions - Partie - 2 =========================== */
 
 /* Exercice 1
@@ -93,9 +93,9 @@ echo $first."\r\n", $second."\r\n", $third."\r\n";
 */
 $age = 12;
 if ($age >= 18) {
-  echo "Vous êtes majeur.\r\n";
+  echo "Vous êtes majeur.</br>";
 } else {
-  echo "Vous êtes mineur.\r\n";
+  echo "Vous êtes mineur.</br>";
 }
 
 
@@ -106,15 +106,15 @@ if ($age >= 18) {
 */
 $isEasy = true;
 if ($isEasy) {
-  echo "C'est facile!!";
+  echo "C'est facile!!</br>";
 } else {
-  echo "C'est difficile !!!";
+  echo "C'est difficile !!!</br>";
 }
 
 if ($isEasy):
-  echo "C'est facile!!";
+  echo "C'est facile!!</br>";
 else:
-  echo "C'est difficile !!!";
+  echo "C'est difficile !!!</br>";
 endif;
 
 
@@ -132,13 +132,13 @@ endif;
 $age = 22;
 $gender = "Femme";
 if ($gender == "Homme" && $age >= 18):
-  echo "Vous êtes un homme et vous êtes majeur";
+  echo "Vous êtes un homme et vous êtes majeur</br>";
 elseif ($gender == "Homme" && $age < 18):
-  echo "Vous êtes un homme et vous êtes mineur";
+  echo "Vous êtes un homme et vous êtes mineur</br>";
 elseif ($gender == "Femme" && $age >= 18):
-  echo "Vous êtes une femme et vous êtes majeur";
+  echo "Vous êtes une femme et vous êtes majeur</br>";
 else :
-  echo "Vous êtes une femme et vous êtes mineur";
+  echo "Vous êtes une femme et vous êtes mineur</br>";
 endif;
 
 
@@ -151,31 +151,31 @@ endif;
 $magnitude = 1;
 switch ($magnitude) :
   case 1:
-    echo "Micro-séisme impossible à ressentir.\r\n";
+    echo "Micro-séisme impossible à ressentir.</br>";
     break;
   case 2:
-    echo "Micro-séisme impossible à ressentir mais enregistrable par les sismomètres.\r\n";
+    echo "Micro-séisme impossible à ressentir mais enregistrable par les sismomètres.</br>";
     break;
   case 3:
-    echo "Ne cause pas de dégats mais commence à pouvoir être légèrement ressenti.\r\n";
+    echo "Ne cause pas de dégats mais commence à pouvoir être légèrement ressenti.</br>";
     break;
   case 4:
-    echo "Séisme capable de faire bouger des objets mais ne causant généralement pas de dégats.\r\n";
+    echo "Séisme capable de faire bouger des objets mais ne causant généralement pas de dégats.</br>";
     break;
   case 5:
-    echo "Séisme capable d'engendrer des dégats importants sur de vieux bâtiments ou bien des bâtiments présentants des défauts de construction. Peu de dégats sur des bâtiments modernes.\r\n";
+    echo "Séisme capable d'engendrer des dégats importants sur de vieux bâtiments ou bien des bâtiments présentants des défauts de construction. Peu de dégats sur des bâtiments modernes.</br>";
     break;
   case 6:
-    echo "Fort séisme capable d'engendrer des destructions majeures sur une large distance (180 km) autour de l'épicentre.\r\n";
+    echo "Fort séisme capable d'engendrer des destructions majeures sur une large distance (180 km) autour de l'épicentre.</br>";
     break;
   case 7:
-    echo "Séisme capable de destructions majeures à modérées sur une très large zone en fonction de la distance.\r\n";
+    echo "Séisme capable de destructions majeures à modérées sur une très large zone en fonction de la distance.</br>";
     break;
   case 8:
-    echo "Séisme capable de destructions majeures sur une très large zone de plusieurs centaines de kilomètres.\r\n";
+    echo "Séisme capable de destructions majeures sur une très large zone de plusieurs centaines de kilomètres.</br>";
     break;
   case 9:
-    echo "Séisme capable de tout détruire sur une très vaste zone.\r\n";
+    echo "Séisme capable de tout détruire sur une très vaste zone.</br>";
     break;
 endswitch;
 
@@ -188,9 +188,9 @@ endswitch;
 */
 $gender = "Femme";
 if ($gender != "Homme") {
-  echo "C'est une développeuse !!!\r\n";
+  echo "C'est une développeuse !!!</br>";
 }else {
-  echo "C'est un développeur !!!\r\n";
+  echo "C'est un développeur !!!</br>";
 }
 
 
@@ -203,9 +203,9 @@ if ($gender != "Homme") {
 */
 $age = 17;
 if ($age >= 18) {
-  echo "Tu es majeur.\r\n";
+  echo "Tu es majeur.</br>";
 }else {
-  echo "Tu n'es pas majeur.\r\n";
+  echo "Tu n'es pas majeur.</br>";
 }
 
 
@@ -217,9 +217,9 @@ if ($age >= 18) {
 */
 $isOk = true;
 if ($isOk == false) {
-  echo "c'est pas bon !!!\r\n";
+  echo "c'est pas bon !!!</br>";
 }else {
-  echo "c'est ok !!\r\n";
+  echo "c'est ok !!</br>";
 }
 
 
@@ -230,9 +230,9 @@ if ($isOk == false) {
     ?>
 */
 if ($isOk) {
-  echo "c'est ok !!\r\n";
+  echo "c'est ok !!</br>";
 }else {
-  echo "c'est pas bon !!!\r\n";
+  echo "c'est pas bon !!!</br>";
 }
 
 
@@ -261,7 +261,7 @@ while ($variable != 10) {
 $a = 0;
 $b = 5;
 while (!($a > 20)) {
-  echo $a * $b."\r\n";
+  echo $a * $b."</br>";
   $a++;
 }
 
@@ -276,7 +276,7 @@ while (!($a > 20)) {
 $i = 100;
 $j = 1;
 while (!($i <= 10)) {
-  echo $i * $j."\r\n";
+  echo $i * $j."</br>";
   $i--;
 }
 
@@ -289,7 +289,7 @@ while (!($i <= 10)) {
 */
 $x = 1;
 while ($x <= 10) {
-  echo $x."\r\n";
+  echo $x."</br>";
   $x += $x/2;
 }
 
@@ -298,7 +298,7 @@ while ($x <= 10) {
  - En allant de 1 à 15 avec un pas de 1, afficher le message On y arrive presque.
 */
 for ($i = 1; $i <= 15; $i++) {
-  echo "On y arrive presque\r\n";
+  echo "On y arrive presque</br>";
 }
 
 
@@ -306,7 +306,7 @@ for ($i = 1; $i <= 15; $i++) {
  - En allant de 20 à 0 avec un pas de 1, afficher le message C'est presque bon.
 */
 for ($i = 20; $i >= 0 ; $i--) {
-  echo "C'est presque bon\r\n";
+  echo "C'est presque bon</br>";
 }
 
 
@@ -314,7 +314,7 @@ for ($i = 20; $i >= 0 ; $i--) {
  - En allant de 1 à 100 avec un pas de 15, afficher le message On tient le bon bout.
 */
 for ($i = 1; $i <= 100; $i += 15) {
-  echo "On tient le bon bout\r\n";
+  echo "On tient le bon bout</br>";
 }
 
 
@@ -322,7 +322,7 @@ for ($i = 1; $i <= 100; $i += 15) {
  - En allant de 200 à 0 avec un pas de 12, afficher le message Enfin !!!!.
 */
 for ($i = 200; $i >= 0 ; $i -= 12) {
-  echo "Enfin !!!!\r\n";
+  echo "Enfin !!!!</br>";
 }
 
 
@@ -340,7 +340,7 @@ function isTrue() {
  - Faire une fonction qui prend en paramètre une chaine de caractères et qui retourne cette même chaine.
 */
 function strOfCharacters($param) {
-  return $param."\r\n";
+  return $param."</br>";
 }
 strOfCharacters("Hello World !!!");
 
@@ -349,7 +349,7 @@ strOfCharacters("Hello World !!!");
  - Faire une fonction qui prend en paramètre deux chaines de caractères et qui revoit la concaténation de ces deux chaines
 */
 function concatStrOfCharact($a, $b){
-  return $a." ".$b."\r\n";
+  return $a." ".$b."</br>";
 }
 concatStrOfCharact("Joe","Doe");
 
@@ -362,11 +362,11 @@ concatStrOfCharact("Joe","Doe");
 */
 function multiInt($a,$b){
   if ($a > $b) {
-    return $a." est plus grand.\r\n";
+    return $a." est plus grand.</br>";
   }elseif ($a < $b) {
-    return $a." est plus petit.\r\n";
+    return $a." est plus petit.</br>";
   }else {
-    return $a." et ".$b." sont identiques.\r\n";
+    return $a." et ".$b." sont identiques.</br>";
   }
 }
 multiInt(10,5);
@@ -376,7 +376,7 @@ multiInt(10,5);
  - Faire une fonction qui prend en paramètre un nombre et une chaine de caractères et qui renvoit la concaténation de ces deux paramètres.
 */
 function concatStrInt($a, $b) {
-  return $a." ".$b."\r\n";
+  return $a." ".$b."</br>";
 }
 concatStrInt(2020, "pire année.");
 
@@ -386,7 +386,7 @@ concatStrInt(2020, "pire année.");
     - "Bonjour" + nom + prénom + ",tu as" + age + "ans".
 */
 function helloYou($lastname, $firstname, $age) {
-  return "Bonjour ".$lastname." ".$firstname.",tu as ".$age." ans.\r\n";
+  return "Bonjour ".$lastname." ".$firstname.",tu as ".$age." ans.</br>";
 }
 helloYou('Stark', 'Tony', 52);
 
@@ -404,13 +404,13 @@ helloYou('Stark', 'Tony', 52);
 */
 function people($age, $gender) {
   if ($gender == "Homme" && $age >= 18):
-    return "Vous êtes un homme et vous êtes majeur.\r\n";
+    return "Vous êtes un homme et vous êtes majeur.</br>";
   elseif ($gender == "Homme" && $age < 18):
-    return "Vous êtes un homme et vous êtes mineur.\r\n";
+    return "Vous êtes un homme et vous êtes mineur.</br>";
   elseif ($gender == "Femme" && $age >= 18):
-    return "Vous êtes une femme et vous êtes majeur.\r\n";
+    return "Vous êtes une femme et vous êtes majeur.</br>";
   else :
-    return "Vous êtes une femme et vous êtes mineur.\r\n";
+    return "Vous êtes une femme et vous êtes mineur.</br>";
   endif;
 }
 people(17,"Femme");
@@ -421,7 +421,7 @@ people(17,"Femme");
  - Tous les paramètres doivent avoir une valeur par défaut.
 */
 function sumTotal($a = 10, $b = 20, $c = 40) {
-  return $a + $b + $c."\r\n";
+  return $a + $b + $c."</br>";
 }
 sumTotal();
 sumTotal(50, 100, 10);
